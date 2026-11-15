@@ -30,7 +30,7 @@ pipeline {
             steps {
                 echo 'Deploying HTML application'
                 sh 'docker rm -f my-html-container || true'
-                sh 'docker run -d -p 5001:80 --name my-html-container jenkins-html-project_1'
+                sh 'docker run -d -p 5002:80 --name my-html-container jenkins-html-project_1'
             }
         }
     }
